@@ -1,0 +1,8 @@
+streamlit
+winrt-Windows.Media.Control
+winrt-Windows.Foundation
+groq
+ytmusicapi
+python-dotenv
+plotly
+requests

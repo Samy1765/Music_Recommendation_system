@@ -1,0 +1,7 @@
+@"
+.env
+__pycache__/
+*.pyc
+.cache
+pages/__pycache__/
+"@ | Set-Content .gitignore
