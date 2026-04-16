@@ -1,25 +1,22 @@
-# 🎧 SonicMood AI: Your Personal Music Oracle
+# 🎧 Music Recommendation System
 
-Welcome to **SonicMood AI**, a smart, context-aware music companion that bridges the gap between what you're listening to and how you're feeling. Unlike traditional recommenders, SonicMood AI actually *listens* to your system's media and uses advanced AI to understand the soul of the music.
+Welcome to the **Music Recommendation System**, a practical tool that tracks your listening habits and suggests new music based on the mood and style of what you're currently playing.
 
-## 🌟 What makes it special?
+## 🌟 Features
 
-SonicMood AI isn't just a playlist generator; it's a real-time music analyst.
-
-- **🎙️ Live Audio Sync:** It hooks directly into your Windows Media session to track what's playing in real-time.
-- **📡 Spectral Diagnostics:** Using Llama-3-powered analysis, it estimates technical features like *Valence* (happiness), *Energy*, *Danceability*, and *Acousticness*.
-- **🧠 Mood Interpretation:** It categorizes your current vibe (e.g., "Relaxed & Chill", "Angry & Tense") based on the spectral DNA of your music.
-- **✨ Contextual Recommendations:** Generates fresh song queues that match your current sonic profile and lets you launch them instantly on YouTube Music.
-- **🎨 Interactive Visuals:** Features a beautiful Plotly Radar Chart to visualize your "Track DNA".
+- **🎙️ Live Audio Sync:** Tracks what's playing in real-time on your system (Windows Media).
+- **📡 Audio Feature Estimation:** Uses AI to estimate musical features like *Valence* (positivity), *Energy*, *Danceability*, and *Acousticness*.
+- **🧠 Mood Analysis:** Categorizes your current music vibe (e.g., "Relaxed & Chill", "Angry & Tense").
+- **✨ Smart Recommendations:** Generates song suggestions that match your current listening profile and plays them on YouTube Music.
+- **🎨 Visual Insights:** Displays an interactive Radar Chart to visualize your music's characteristics.
 
 ---
 
-## 📖 The Evolution: Why Groq?
+## 📖 The Backstory: Switching to Groq
 
-This project didn't start this way. Initially, we leaned on the **Spotify API** for audio features and **Google/YouTube APIs** for data. However, we hit several roadlocks:
-1.  **Policy Restrictions:** Restrictive API policies made it difficult to build a seamless, "always-on" experience.
-2.  **Credit & Cost Issues:** Many high-quality spectral analysis APIs are hidden behind expensive paywalls or have strictly limited free tiers.
-3.  **The Pivot:** We decided to "humanize" the AI. Instead of relying on a rigid database of pre-calculated features, we switched to **Groq (powered by Llama 3.3)**. This allows the system to *estimate* musical features and generate recommendations dynamically based on pure reasoning and vast musical knowledge—making the app faster, more resilient, and truly AI-first.
+Originally, this project relied on the **Spotify API** and **Google/YouTube APIs**. However, due to restrictive policies and credit issues with those services, we switched to **Groq (Llama 3.3)**. 
+
+By using an AI model to analyze track features and generate recommendations, the system is more flexible, avoids expensive API paywalls, and works dynamically without needing a pre-built database for every song.
 
 ---
 
@@ -46,26 +43,21 @@ GROQ_API_KEY=your_groq_api_key_here
 
 ## 🔑 How to get your Groq API Key
 
-Getting started with Groq is incredibly easy and offers lightning-fast inference for our Llama model.
+To get your API key for the analysis engine:
 
-1.  Go to the [**Groq Cloud Console**](https://console.groq.com/).
-2.  Sign up for an account (you can use Google or GitHub).
-3.  Navigate to the **API Keys** section on the left sidebar.
-4.  Click **"Create API Key"**.
-5.  Name it (e.g., `SonicMood_AI`) and copy the key into your `.env` file.
+1.  Visit the [**Groq Cloud Console**](https://console.groq.com/).
+2.  Sign up or log in.
+3.  Go to the **API Keys** section.
+4.  Create a new API key and copy it to your `.env` file.
 
 ---
 
 ## 🚀 Running the App
 
-Once you're set up, simply launch the Streamlit dashboard:
+Launch the application using Streamlit:
 
 ```bash
 streamlit run app.py
 ```
 
-Now, play a song on your computer (Spotify, YouTube, VLC, anything!) and hit **SYNC AUDIO SOURCE** in the dashboard to see the magic happen!
-
----
-
-*Built with ❤️ for music lovers who want a smarter way to discover their next favorite track.*
+Play a song on your computer and click **SYNC AUDIO SOURCE** in the dashboard to start the analysis!
