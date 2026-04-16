@@ -7,7 +7,7 @@ from ui_utils import apply_custom_css
 import plotly.graph_objects as go
 import asyncio
 
-st.set_page_config(page_title="SonicMood AI | Home", layout="wide", page_icon="🎧")
+st.set_page_config(page_title="Music Recommender and Analyzer | Home", layout="wide", page_icon="🎧")
 apply_custom_css()
 
 # Session state configuration
